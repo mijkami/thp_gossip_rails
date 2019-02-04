@@ -1,0 +1,18 @@
+<div class="container">
+	<div class="row justify-content-center align-items-center my-row">
+		<div class="col-md-8 col-sm-10">
+
+			<div class="card" style="margin-bottom: 2vh">
+		        <div class="card-body">
+		            <h3 class="card-title"><%= Gossip.find(params[:gossip_id]).title %></h3>
+
+		            <%= link_to "#{User.find(Gossip.find(params[:gossip_id]).user_id).first_name}", author_path(Gossip.find(params[:gossip_id]).user_id), :class => "card-link" %>
+
+		            <hr>
+		            <p class="card-text"><%= Gossip.find(params[:gossip_id]).content %></p>
+		        </div>
+		    </div>
+
+		 </div>
+	</div>
+</div>

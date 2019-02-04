@@ -1,0 +1,15 @@
+<div class="container">
+
+<% Gossip.all.each do |gossip| %>
+
+	<div class="card" style="margin-bottom: 2vh">
+		<div class="card-body">
+			<h4 class="card-title"> <%= gossip.title %> </h4>
+			<p class="card-text"> <%= User.find(gossip.user_id).first_name %></p>
+			<%= link_to "Read more", gossip_path(gossip.id), :class => "card-link" %>
+		</div>
+	</div>
+
+<% end %>
+
+</div>
