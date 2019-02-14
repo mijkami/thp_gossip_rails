@@ -9,7 +9,7 @@ Comment runner notre magnifique application :
 
 1/ Clone from here
 ```
-git clone https://github.com/vdepetigny/Gossip_on_Rails
+git clone https://github.com/mijkami/thp_gossip_rails
 ```
 
 2/ Add gems : Bundle install
